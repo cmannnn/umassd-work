@@ -1,0 +1,117 @@
+#1. For each of the following vocabulary terms, write a concise 1-2 sentence definition or description. Be brief, and
+to the point.
+
+command line program: programs that are run from terminal. Includes cd, ls, pwd etc. 
+
+functions: a piece of code that attempts to accomplish a task with an input and returns an output.
+
+modules: a back end import typically declared at the beginning of a program that allows you to use other peoples written code. ex: import numpy as np.
+
+python list: a data type in python that can consists of floats, strings, ints (including a mixture of them all). Can be initialized by my_list = list() or my_list = []. 
+
+#2. List 2 Python packages or modules: numpy, math
+
+#3. Describe the similarities and differences between for-loops and while loops.
+
+Any for loop can be written as a while loop and vice-versa. Both iterate over a defined set of numbers and must include a base case.
+
+#4. Fill in the table:
+
+Expression:            Result:     Type:
+1 + 2*3                7           int
+“17” + “76”            "1776"        string
+“17” - 10              error       n/a
+len( list(range(3)) )  3           int
+sum([20,40])           60          int
+[10] * 0.5             error       n/a
+not (True and False)   True        bool
+[2] + [“2”]            [2, "2"]    list
+print(”%e”%(.01))      1e-2        n/a
+
+#5. Pretend you run the following program on the terminal (or in spyder). Write down exactly what the
+output would be:
+
+N = 2
+i = 0
+my_list = [True, False, False, True]
+counter = 0
+
+while i < N:
+	if my_list[i]:
+		counter = counter + 1
+	i = i + 1
+
+print(counter)
+------------------------------------
+
+1
+
+#6. Pretend you run the following program on the terminal (or in spyder). Write down exactly what the
+output would be.
+
+x = 10.0
+
+if x / 10 == 1:
+	print("a")
+	x = 3
+else:
+	print("b")
+	x = 7
+
+if x / 2 <= 5.0:
+	print("c")
+
+if x * 1.5 <= 25:
+	print("d")
+elif x * 1.5 <= 20:
+	print("e")
+
+print( type(x) )
+-------------------------------------
+
+a
+c
+d
+<class 'int'>
+
+#7. Pretend you run the following program on the terminal (or in spyder). Write down exactly what the
+output would be
+
+for x in range(1,5):
+	if x < 2:
+		print( "cup" )
+	elif x > 3 and x <= 6:
+		print( "cake" )
+	else:
+		print( "cuppy" )
+
+-------------------------------------
+
+cup
+cuppy
+cuppy
+cake
+
+#8. The following code has an error. Circle the line and explain whats wrong.
+
+e = "2.718"
+pi = 3.14
+pie = str(pi) + e
+print( int(pie) )
+print( int(pi) )
+print( pie )
+
+The line "print( int(pie))" will cause an error due to trying to convert a string into a int.
+
+#9. The following code has an error. Circle the line and explain whats wrong.
+
+from sin import math
+x = sin(1.0)
+x = x * 3
+print( x ) 
+
+The import is incorrect. It should read from math import sin.
+
+
+
+

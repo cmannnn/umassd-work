@@ -1,0 +1,144 @@
+# 03/14/2022
+# author: Chris Murphy
+# MTH 322 280 midterm exam practice
+
+1. For each of the following vocabulary terms, write a concise 1-2 sentence definition or description. Be brief, and
+to the point.
+
+Boolean expression: an expression in Python that equals True or False. 
+
+While loop: a type of loop that iterates over itself while true.
+
+Git: Git is version control software for storing your code. You can create repositories for projects you are working on to upload your code to.
+
+2. List 4 Python data types: bool, int, float, string
+
+3. Your friend missed the class on if-statements. Write down an example if-statement block of code that
+includes the keywords “if”, “elif”, and “else”. Make sure to use proper syntax and indentation.
+
+test = 'hi'
+
+if test == 'hi':
+  print('hi if statement')
+
+elif test == 'hi':
+  print('goodbye if statement')
+
+else:
+  print('none found')   
+
+4. Please write a Python program that prints the value of y(t) = 0.5 × t 2 at t = 3. Your answer must
+implement this expression (that is, your program should not be “print(4.5)”, and the number 4.5 should appear
+nowhere in your program). For full credit, all variable names should be valid and any mathematical expressions
+must use valid Python operators.
+
+t = 3
+y = .5 * t ** 2
+print(y)
+
+5. The following code has an error. Describe the problem and the fix
+
+from sin import math
+x = sin(1.0)
+x = x * 3
+print( x )
+
+The first line import is wrong. Should read "from math import sin".
+
+6. The following code has an error. Describe the problem and the fix.
+
+Tn = [0.0]
+
+for i in range(1, 9):
+    Tn = Tn + i
+
+print(Tn)
+
+Line 3 has an error. An int cannot be added to a list. If you removed the brackets in line one, then the code would work
+
+7. The following code has an error. Describe the problem and the fix
+
+x = 7
+if x = 7:
+    print("x is 7")
+else:
+    x = x + (1.0j)**2.0
+
+print( type(x) )
+
+The comparison in line 2 is incorrect. It should read "if x == 7".
+
+8. Pretend you run the following program on the terminal (or in spyder). Write down exactly what the
+output would be.
+
+x = 10.0
+
+if x/10.0 == 1.0:
+    print( type(x) )
+    x = 3
+
+print( x )
+
+if x > 7:
+    print("a")
+elif x > 2:
+    print("b")
+elif x > 1:
+    print("c")
+else:
+    print("d")
+
+print( x )
+
+-------------------
+
+float 3 b 3
+
+9. Pretend you run the following program on the terminal (or in spyder). Write down exactly what the
+output would be.
+
+my_list = [20, 7, -1]
+
+output = 0.0
+
+for x in my_list:
+    if x >= 11:
+        output = output + 2
+    elif x >= 0:
+        output = output + 1
+    else:
+        print("no change")
+
+print(output)
+
+--------------------
+
+no change 3.0
+
+10. Pretend you run the following program on the terminal (or in spyder). Write down exactly what the
+output would be.
+
+pow10 = 1.0
+loops = 0.0
+while pow10 <= 100:
+    print(pow10)
+    loops = loops + 1.0
+    pow10 = pow10*10.0
+
+print("Done with %f loops"%loops)
+
+--------------------
+
+1.0 10.0 100.0 Done with 3.000000 loops
+
+
+
+
+
+
+
+
+
+
+
+
